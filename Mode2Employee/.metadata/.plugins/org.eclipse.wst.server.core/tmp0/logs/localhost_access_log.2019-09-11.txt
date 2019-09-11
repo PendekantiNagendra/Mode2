@@ -1,0 +1,5 @@
+127.0.0.1 - - [11/Sep/2019:11:22:39 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:11:22:41 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 1079
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:11:22:48 +0530] "GET /SpringMVCHibernateCRUD/newEmployee HTTP/1.1" 200 1260
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:11:23:14 +0530] "POST /SpringMVCHibernateCRUD/saveEmployee HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:11:23:14 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 1340
