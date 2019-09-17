@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.hcl.lambda.MyInterface"/>
+<fullyQualifiedTypeName name="com.hcl.lambda.MyFunctionalInterface"/>
+<fullyQualifiedTypeName name="com.hcl.lambda.DefaultClass"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.hcl.fiMethods.MyInterface"/>
+<fullyQualifiedTypeName name="java.util.function.Consumer"/>
+<fullyQualifiedTypeName name="com.hcl.fiMethods.InstanceInterface"/>
+<fullyQualifiedTypeName name="com.hcl.fiMethods.InstanceMethodRef"/>
+<fullyQualifiedTypeName name="com.hcl.fiMethods.EmployeeInterface"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.hcl.streams.Employee"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="com.hcl.java8streams.model.Employee"/>
+<fullyQualifiedTypeName name="org.jboss.logging.Logger"/>
+<fullyQualifiedTypeName name="com.hcl.java8streams.service.EmployeeService"/>
+<fullyQualifiedTypeName name="org.hibernate.annotations.common.util.impl.Log_.logger"/>
+<fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+<fullyQualifiedTypeName name="com.hcl.java8streams.dao.EmployeeDao"/>
+</qualifiedTypeNameHistroy>

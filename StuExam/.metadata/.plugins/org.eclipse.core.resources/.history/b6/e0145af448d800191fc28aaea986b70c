@@ -1,0 +1,8 @@
+package com.hcl.fiMethods;
+
+public class InstanceMethodMain {
+	public static void main(String[] args) {
+		InstanceInterface ins = (a) -> {System.out.println(a)};
+	}
+
+}

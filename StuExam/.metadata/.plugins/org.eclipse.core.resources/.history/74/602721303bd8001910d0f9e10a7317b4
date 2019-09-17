@@ -1,0 +1,13 @@
+package com.hcl.lambda;
+
+public class MultiIntClass {
+	public static void main(String[] args) {
+		MultiInterface min = (name) -> {return "Hello" + name;};
+			System.out.println("Hello " + "Nag");
+		
+			System.out.println("Static Method :" + MultiInterface.add(4,7));
+			System.out.println(min.equals(Nag));
+			System.out.println("Default Method " + min.defaultMethod(44));
+			
+	}
+}

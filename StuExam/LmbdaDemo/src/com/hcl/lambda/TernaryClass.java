@@ -1,0 +1,8 @@
+package com.hcl.lambda;
+
+public class TernaryClass {
+	public static void main(String[] args) {
+		TernaryInt t = (a,b) -> (a > b ? a : b);
+		System.out.println(t.max(10, 9));
+	}
+}
