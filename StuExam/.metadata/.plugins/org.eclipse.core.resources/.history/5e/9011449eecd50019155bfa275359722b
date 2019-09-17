@@ -1,0 +1,15 @@
+package com.hcl.lambda;
+
+public class withoutLambdaExpression {
+	public static void main(String[] args) {
+		MyInterface myIntefece = new MyInterface() {
+			
+			@Override
+			public void sayMessage() {
+				// TODO Auto-generated method stub
+				
+			}
+		};
+	}
+
+}

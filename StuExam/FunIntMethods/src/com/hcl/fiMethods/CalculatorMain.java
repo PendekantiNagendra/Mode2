@@ -1,0 +1,10 @@
+package com.hcl.fiMethods;
+
+public class CalculatorMain {
+
+	public static void main(String[] args) {
+		Calculator calculator = new Calculator();
+		Integer ans = calculator.calc((x, y) -> x + y, 10, 8);
+		System.out.println(ans);
+	}
+}

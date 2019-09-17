@@ -1,0 +1,8 @@
+package com.hcl.lambda;
+
+public interface Default {
+	default void printHello() {
+		System.out.println("Hello Default");
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.hcl.fiMethods;
+
+import java.util.function.BiFunction;
+
+public class Calculator {
+	public Integer calc(BiFunction<Intrger, Intrger, Intrger>)
+
+}

@@ -1,0 +1,17 @@
+package com.hcl.java8streams.dao;
+
+import java.util.List;
+
+import org.hibernate.SessionFactory;
+
+import com.hcl.java8streams.model.Employee;
+
+public class EmployeeDaoImpl implements EmployeeDao{
+
+	@Override
+	public List<Employee> getAllEmployees() {
+		return SessionFactory.getCurrentSession().createQuery("from Employee")
+				.list();
+	}
+
+}

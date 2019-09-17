@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+    <div align="center">
+		<h1>Employee List</h1>
+		<h2>No of Employees."${listEmployee}"</h2>
+		<table border="4" bordercolor="yellow" bgcolor="skyblue" >
+			<th style="color:white">Emp No</th>
+			<th style="color:white">Emp Name</th>
+			<th style="color:white">Emp DOJ</th>
+			<th style="color:white">Band</th>
+			<th style="color:white">Salary</th>
+			
+			<c:forEach var="employee" items="${listEmployee}">
+				<tr>
+					<td>${employee.empNo}</td>
+					<td>${employee.empName}</td>
+					<td>${employee.dateOfJoin}</td>
+					<td>${employee.band}</td>
+					<td>${employee.salary}</td>
+				</tr>
+			</c:forEach>
+		</table>
+		<h4>
+</body>
+</html>
