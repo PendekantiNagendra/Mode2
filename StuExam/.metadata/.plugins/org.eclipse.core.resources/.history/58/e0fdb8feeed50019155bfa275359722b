@@ -1,6 +1,0 @@
-package com.hcl.lambda;
-
-public interface MyFunctionalInterface {
-	public void sayMessage();
-
-}

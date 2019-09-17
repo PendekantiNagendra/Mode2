@@ -1,8 +1,0 @@
-package com.hcl.lambda;
-
-public class Addition {
-	public static void main(String[] args) {
-		Addable a = (int a, int b) -> {a + b};
-	}
-
-}

@@ -1,6 +1,0 @@
-package com.hcl.lambda;
-
-public interface Addable {
-	public void adsd(int a, int b);
-
-}

@@ -1,8 +1,0 @@
-package com.hcl.lambda;
-
-public class MultiIntClass {
-	public static void main(String[] args) {
-		MultiInterface min = (name) -> {System.out.println("Hello " + "Nag");
-	};
-
-}

@@ -1,8 +1,0 @@
-package com.hcl.lambda;
-
-public class withLambdaExpression {
-	public static void main(String[] args) {
-		MyInterface myIntefece = new
-	}
-
-}

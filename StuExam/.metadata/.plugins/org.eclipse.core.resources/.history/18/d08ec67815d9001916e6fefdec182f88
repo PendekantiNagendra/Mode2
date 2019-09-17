@@ -1,8 +1,0 @@
-package com.hcl.java8streams.service;
-
-public interface EmployeeService {
-	public void getAllEmployees() {
-		
-	}
-
-}

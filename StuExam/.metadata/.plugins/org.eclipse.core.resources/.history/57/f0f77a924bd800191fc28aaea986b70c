@@ -1,6 +1,0 @@
-package com.hcl.fiMethods;
-
-public interface EmployeeInterface {
-	
-
-}

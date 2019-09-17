@@ -1,8 +1,0 @@
-package com.hcl.lambda;
-
-public class WithLambdaExpression {
-	public static void main(String[] args) {
-		MyFunctionalInterface myFnInt = () -> {System.out.println("Welcome to Lambda")};
-	}
-
-}

@@ -1,9 +1,0 @@
-package com.hcl.fiMethods;
-
-public class MyIntClass {
-	public static void main(String[] args) {
-		
-		MyInterface min = (a) -> (System.out.println(a););
-	}
-
-}
