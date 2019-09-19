@@ -1,0 +1,28 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from NagendraService WSDL service -->
+
+  <service name="Nagendra" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://com"/>
+      <parameter name="wsdlServiceElement" value="NagendraService"/>
+      <parameter name="schemaQualified" value="http://com"/>
+      <parameter name="wsdlServicePort" value="Nagendra"/>
+      <parameter name="className" value="com.NagendraSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="Nagendra"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="getSap" qname="operNS:getSap" xmlns:operNS="http://com" returnQName="retNS:getSapReturn" xmlns:retNS="http://com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <parameter name="allowedMethods" value="getSap"/>
+
+  </service>
+</deployment>

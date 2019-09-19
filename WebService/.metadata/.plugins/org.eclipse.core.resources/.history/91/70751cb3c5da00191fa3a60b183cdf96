@@ -1,0 +1,9 @@
+package com.hcl.helloservice.endpoint;
+
+public class Main {
+	public static void main(String[] args) {
+		HelloProxy helloProxy = new HelloProxy();
+		System.out.println(helloProxy.sayHello("Nagendra"));
+	}
+
+}

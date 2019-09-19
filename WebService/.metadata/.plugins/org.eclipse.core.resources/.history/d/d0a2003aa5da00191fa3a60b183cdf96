@@ -1,0 +1,17 @@
+package com.hcl.soap;
+
+import java.rmi.RemoteException;
+
+public class MainApplication {
+	public static void main(String[] args) {
+		int result = 0;
+		CalculatorProxy calculatorProxy = new CalculatorProxy();
+		  try {
+			  result = calculatorProxy.mult(2, 4);
+			  System.out.println("Mult of 2 numbers is :" + result);
+		  } catch(RemoteException e) {
+			  e.printStackTrace();
+		  }
+	}
+
+}

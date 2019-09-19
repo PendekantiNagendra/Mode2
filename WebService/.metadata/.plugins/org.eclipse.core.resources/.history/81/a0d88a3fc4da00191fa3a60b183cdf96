@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//src/com/hcl/helloservice/endpoint/HelloService.java=UTF-8
+encoding//src/com/hcl/helloservice/endpoint/HelloServiceLocator.java=UTF-8
+encoding//src/com/hcl/helloservice/endpoint/Hello_PortType.java=UTF-8

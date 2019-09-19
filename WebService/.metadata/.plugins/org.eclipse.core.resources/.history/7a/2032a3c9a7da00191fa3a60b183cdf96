@@ -1,0 +1,54 @@
+package com.hcl.nagendra;
+
+public class PersonInfoProxy implements com.hcl.nagendra.PersonInfo {
+  private String _endpoint = null;
+  private com.hcl.nagendra.PersonInfo personInfo = null;
+  
+  public PersonInfoProxy() {
+    _initPersonInfoProxy();
+  }
+  
+  public PersonInfoProxy(String endpoint) {
+    _endpoint = endpoint;
+    _initPersonInfoProxy();
+  }
+  
+  private void _initPersonInfoProxy() {
+    try {
+      personInfo = (new com.hcl.nagendra.PersonInfoServiceLocator()).getPersonInfo();
+      if (personInfo != null) {
+        if (_endpoint != null)
+          ((javax.xml.rpc.Stub)personInfo)._setProperty("javax.xml.rpc.service.endpoint.address", _endpoint);
+        else
+          _endpoint = (String)((javax.xml.rpc.Stub)personInfo)._getProperty("javax.xml.rpc.service.endpoint.address");
+      }
+      
+    }
+    catch (javax.xml.rpc.ServiceException serviceException) {}
+  }
+  
+  public String getEndpoint() {
+    return _endpoint;
+  }
+  
+  public void setEndpoint(String endpoint) {
+    _endpoint = endpoint;
+    if (personInfo != null)
+      ((javax.xml.rpc.Stub)personInfo)._setProperty("javax.xml.rpc.service.endpoint.address", _endpoint);
+    
+  }
+  
+  public com.hcl.nagendra.PersonInfo getPersonInfo() {
+    if (personInfo == null)
+      _initPersonInfoProxy();
+    return personInfo;
+  }
+  
+  public java.lang.String getName() throws java.rmi.RemoteException{
+    if (personInfo == null)
+      _initPersonInfoProxy();
+    return personInfo.getName();
+  }
+  
+  
+}
