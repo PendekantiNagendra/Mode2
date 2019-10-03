@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="Authenticate" method="get" modelAttribute="account">
+	<center>
+		<table border="3px"; bgcolor="#00FF00">
+			<tr>
+				<th>accountnum</th>
+				<th>amount</th>
+				<th>accounttype</th>
+				<th>userid</th>
+			</tr>
+			<tr>
+				<td>${accountnum}</td>	
+				<td>${amount}</td>	
+				<td>${accounttype}</td>	
+				<td>${userid}</td>	
+			</tr>
+		</table>
+		<input <a href="Login" /> type="submit" value="Exit">
+	</center>
+</form>
+</body>
+</html>
