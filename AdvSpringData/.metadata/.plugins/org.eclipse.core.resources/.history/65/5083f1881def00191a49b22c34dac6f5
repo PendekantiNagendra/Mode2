@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div align="center">
+		<h1>Employee List</h1>
+		<form:form action="searchEmployee" method="POST"
+			modelAttribute="searchEmployee">
+		   Emp No :
+		   <form:input path="empno" />
+			<br />
+			<br />
+		   Emp Name :
+		   <form:input path="name" />
+			<br />
+			<br />
+			Department :
+		   <form:input path="dept" />
+			<br />
+			<br />
+			Designation :
+		   <form:input path="desig" />
+			<br />
+			<br />
+		   Basic :
+		   <form:input path="basic" value="0.0" />
+			<br />
+			<br />
+			<input type="submit" value="Search" />
+		</form:form>
+		<h2>No of Employees."${listEmployee.size()}"</h2>
+		<table border=2, bgcolor="pink">
+			<th style="color: green">Emp No</th>
+			<th style="color: green">Emp Name</th>
+			<th style="color: green">Department</th>
+			<th style="color: green">Designation</th>
+			<th style="color: green">Basic</th>
+
+			<c:forEach var="emp" items="${listEmployee}">
+				<tr>
+
+					<td>${emp.empno}</td>
+					<td>${emp.name}</td>
+					<td>${emp.dept}</td>
+					<td>${emp.desig}</td>
+					<td>${emp.basic}</td>
+				</tr>
+			</c:forEach>
+		</table>
+	</div>
+</body>
+</html>

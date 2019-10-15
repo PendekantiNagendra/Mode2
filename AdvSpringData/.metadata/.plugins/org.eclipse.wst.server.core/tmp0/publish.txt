@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Tue Oct 15 12:39:54 IST 2019
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\coalesce\\.m2\\repository\\org\\springframework\\spring-web\\5.1.10.RELEASE\\spring-web-5.1.10.RELEASE.jar=C\:\\Software\\STS 3.9_64\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\springData\\WEB-INF\\lib\\spring-web-5.1.10.RELEASE.jar
+org.eclipse.jst.jee.server\:springData=C\:\\Software\\STS 3.9_64\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\springData

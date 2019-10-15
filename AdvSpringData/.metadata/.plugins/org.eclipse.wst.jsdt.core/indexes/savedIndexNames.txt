@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+C:\Users\coalesce\Documents\AdvSpringData\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+835508908.index
+2745496218.index
+740184734.index
+2827014592.index
