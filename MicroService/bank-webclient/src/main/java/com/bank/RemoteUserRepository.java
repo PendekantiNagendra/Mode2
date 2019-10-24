@@ -29,7 +29,7 @@ public class RemoteUserRepository implements ClientUserService {
 	@Override
 	public String login(User user) {
 		User user2 =  restTemplate.getForObject(serviceUrl + "/user/" + user.getUsername() + "/get",User.class, user);
-		//System.out.println(user2.getUsername());
+		//System.out.println(user2.getUsername()); 
 		System.out.println(user.getUsername());
 		System.out.println(user.getPassword());
 		//System.out.println(user2.getPassword());
